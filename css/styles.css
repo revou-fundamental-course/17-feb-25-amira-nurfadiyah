@@ -1,5 +1,9 @@
 /* Ini CSS External */
 
+    body {
+        font-family: system-ui
+    }
+
     .main-header {
         display: flex;
         justify-content: space-between;
@@ -52,16 +56,22 @@
         margin-block-end: 1em;
     }
 
+    main>header{
+        text-align: center
+    }
+
     .main-content {
         display: flex;
         gap: 24px;
     }
 
     .main-container {
-        border: 1px solid;
         height: 400px;
         flex: 1;
-        }
+        align-content: center;
+        text-align: center;
+        background-color: #f1f1f1
+    }
 
     #our-package-section>header {
         height: 100px;
@@ -73,6 +83,8 @@
     .our-package-content {
         border: 1px solid;
         height: 300px;
+        align-content: center;
+        text-align: center;
     }
 
     #call-us-section>header {
@@ -85,6 +97,8 @@
     .call-us-content {
         border: 1px solid;
         height: 300px;
+        align-content: center;
+        text-align: center;
     }
 
     footer {
