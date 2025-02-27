@@ -1,7 +1,7 @@
 /* Ini CSS External */
 
     body {
-        font-family: system-ui
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     .main-header {
@@ -13,12 +13,12 @@
     .Logo-Company {
         height: 50px;
         width: 50px;
-        background-image: url(https://picsum.photos/500);
+        background-image: url(https://picsum.photos/600);
         background-size: cover;
         border-radius: 50%;
     }
 
-    nav {
+    .nav {
         display: flex
     }
     
@@ -76,7 +76,29 @@
         flex: 1;
         align-content: center;
         text-align: center;
-        background-color: #f1f1f1
+    }
+
+    .main-banner {
+        height: 300px;
+        background-image: url(https://picsum.photos/600);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-img-1 {
+        background-image: url(https://picsum.photos/600);
+    }
+
+    .banner-img-2 {
+        background-image: url(https://picsum.photos/625);
+    }
+
+    .banner-img-3 {
+        background-image: url(https://picsum.photos/650);
+    }
+
+    .banner-img-4 {
+        background-image: url(https://picsum.photos/675);
     }
 
     #our-package-section>header {
@@ -109,4 +131,26 @@
 
     footer {
         text-align: center;
+    }
+
+    /* Responsive Design */
+    @media only screen and (max-width: 480px) {
+        .main-content {
+            flex-direction: column;
+            width: 100%;
+        }
+        .main-header {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .Logo-Company {
+            margin-bottom: 14px;
+        }
+
+        .nav {
+            flex-direction: column;
+        }
     }
